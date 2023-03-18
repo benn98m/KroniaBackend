@@ -1,6 +1,5 @@
-
 {
-  "name": "my-python-app",
+  "name": "agrobackendv2.3",
   "description": "My Python App",
   "stack": "heroku-20",
   "buildpacks": [
@@ -9,7 +8,7 @@
     }
   ],
   "env": {
-    "PYTHON_VERSION": "3.9.10"
+    "PYTHON_VERSION": "3.7.12"
   },
   "scripts": {
     "post_compile": "pip install -r requirements.txt"
