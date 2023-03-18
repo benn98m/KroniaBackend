@@ -1,1 +1,24 @@
 
+{
+  "name": "my-python-app",
+  "description": "My Python App",
+  "stack": "heroku-20",
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "env": {
+    "PYTHON_VERSION": "3.9.10"
+  },
+  "scripts": {
+    "post_compile": "pip install -r requirements.txt"
+  },
+  "addons": [],
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
